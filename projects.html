@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | MIN XIE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header page-header">
+    <a class="brand" href="index.html">MIN XIE</a>
+    <div class="header-actions">
+      <nav aria-label="Main navigation">
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="experience.html" data-i18n="nav.experience">Experience</a>
+        <a class="active" href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <button class="lang-toggle" type="button" aria-label="Switch language">
+        <span data-lang-option="en">EN</span>
+        <span data-lang-option="zh">中文</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-shell projects-shell">
+    <section class="page-title projects-title">
+      <p class="eyebrow" data-i18n="projects.eyebrow">Selected projects</p>
+      <h1 data-i18n="projects.title">Research-led visual projects for culture, fashion, and spatial experience.</h1>
+    </section>
+
+    <section class="project-stack-layout" aria-label="Project folders and details">
+      <div class="project-stack" role="tablist" aria-label="Project folders">
+        <p class="project-switch-hint" data-i18n="projects.switchHint">Move your mouse to switch projects</p>
+        <button class="stack-folder is-active" type="button" data-project-trigger="fashion" data-project-pdf="pdf-viewer.html?file=county-aesthetics.pdf&title=Aesthetics%20Fashion%20Research" aria-selected="true">
+          <img src="assets/project-folder-clean.png" alt="">
+          <span class="stack-folder-label" data-i18n="projects.fashion">Fashion research</span>
+          <strong class="stack-folder-title" data-i18n="projects.countyFolder">Aesthetics Fashion Research</strong>
+        </button>
+
+        <button class="stack-folder stack-folder-ubc" type="button" data-project-trigger="ubc" data-project-pdf="pdf-viewer.html?file=ubc-summer-school.pdf&title=UBC%20Summer%20School" aria-selected="false">
+          <img src="assets/project-folder-clean.png" alt="">
+          <span class="stack-folder-label" data-i18n="projects.urban">Urban architecture design</span>
+          <strong class="stack-folder-title" data-i18n="projects.ubcTitle">UBC Summer School</strong>
+        </button>
+
+        <button class="stack-folder stack-folder-cloud" type="button" data-project-trigger="cloud" data-project-pdf="pdf-viewer.html?file=cloud-dream-nook.pdf&title=Cloud%20Dream%20Nook" aria-selected="false">
+          <img src="assets/project-folder-clean.png" alt="">
+          <span class="stack-folder-label" data-i18n="projects.blender">Blender space design</span>
+          <strong class="stack-folder-title">Cloud Dream Nook</strong>
+        </button>
+      </div>
+
+      <div class="project-page-stage">
+        <article class="project-detail-page is-active" data-project-page="fashion">
+          <p class="eyebrow" data-i18n="projects.fashion">Fashion research</p>
+          <h2 data-i18n="projects.countyTitle">Aesthetics Fashion Research</h2>
+          <p data-i18n="projects.countyText">A fashion research project about county aesthetics, Y2K visual logic, brand translation, and sustainable commercial storytelling.</p>
+          <div class="project-tags" aria-label="Project marketing focus">
+            <span data-i18n="projects.tagConsumerInsight">Consumer insight</span>
+            <span data-i18n="projects.tagTrendResearch">Trend research</span>
+            <span data-i18n="projects.tagVisualStrategy">Visual strategy</span>
+          </div>
+          <div class="project-detail-images vertical-images">
+            <img src="assets/county-aesthetics-03.png" alt="County aesthetics research slide">
+            <img src="assets/county-aesthetics-07.png" alt="County aesthetics fashion illustration slide">
+          </div>
+          <a class="project-pdf-link" href="pdf-viewer.html?file=county-aesthetics.pdf&title=Aesthetics%20Fashion%20Research" data-i18n="projects.openPdf">Open full PDF</a>
+        </article>
+
+        <article class="project-detail-page" data-project-page="ubc">
+          <p class="eyebrow" data-i18n="projects.urban">Urban architecture design</p>
+          <h2 data-i18n="projects.ubcTitle">UBC Summer School</h2>
+          <p data-i18n="projects.ubcText">An urban landscape architecture exchange project exploring public space, ecological planning, and cross-cultural design collaboration.</p>
+          <div class="project-tags" aria-label="Project marketing focus">
+            <span data-i18n="projects.tagUserExperience">User experience</span>
+            <span data-i18n="projects.tagSpatialStrategy">Spatial strategy</span>
+            <span data-i18n="projects.tagCultureResearch">Cross-cultural research</span>
+          </div>
+          <div class="project-detail-images">
+            <img src="assets/ubc-preview-web.jpg" alt="UBC summer school project preview">
+          </div>
+          <a class="project-pdf-link" href="pdf-viewer.html?file=ubc-summer-school.pdf&title=UBC%20Summer%20School" data-i18n="projects.openPdf">Open full PDF</a>
+        </article>
+
+        <article class="project-detail-page" data-project-page="cloud">
+          <p class="eyebrow" data-i18n="projects.blender">Blender space design</p>
+          <h2>Cloud Dream Nook</h2>
+          <p data-i18n="projects.cloudText">A soft 3D spatial design concept using dreamy lighting, gentle forms, and immersive emotional atmosphere.</p>
+          <div class="project-tags" aria-label="Project marketing focus">
+            <span data-i18n="projects.tagVisualStorytelling">Visual storytelling</span>
+            <span data-i18n="projects.tagBrandAtmosphere">Brand atmosphere</span>
+            <span data-i18n="projects.tag3dExperience">3D experience design</span>
+          </div>
+          <div class="project-detail-images">
+            <img src="assets/cloud-dream-nook-preview.png" alt="Cloud Dream Nook Blender space design preview">
+          </div>
+          <a class="project-pdf-link" href="pdf-viewer.html?file=cloud-dream-nook.pdf&title=Cloud%20Dream%20Nook" data-i18n="projects.openPdf">Open full PDF</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

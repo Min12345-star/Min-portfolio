@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project PDF | MIN XIE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pdf-page">
+  <header class="pdf-toolbar">
+    <a class="pdf-back" href="projects.html">Back to Projects</a>
+    <strong id="pdf-title">Project PDF</strong>
+  </header>
+  <main class="pdf-frame-wrap">
+    <iframe id="pdf-frame" title="Project PDF"></iframe>
+  </main>
+  <script>
+    const allowedFiles = new Set(["county-aesthetics.pdf", "ubc-summer-school.pdf", "cloud-dream-nook.pdf"]);
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get("file") || "county-aesthetics.pdf";
+    const title = params.get("title") || "Project PDF";
+    const safeFile = allowedFiles.has(file) ? file : "county-aesthetics.pdf";
+    document.getElementById("pdf-title").textContent = title;
+    document.getElementById("pdf-frame").src = `assets/${safeFile}`;
+  </script>
+</body>
+</html>

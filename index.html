@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIN XIE | Marketing Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand" href="index.html">MIN XIE</a>
+    <div class="header-actions">
+      <nav aria-label="Main navigation">
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="experience.html" data-i18n="nav.experience">Experience</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <button class="lang-toggle" type="button" aria-label="Switch language">
+        <span data-lang-option="en">EN</span>
+        <span data-lang-option="zh">中文</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="home-stage" aria-label="Portfolio folder navigation">
+    <section class="hero-orbit">
+      <p class="intro-note" data-i18n="home.introNote">allow me to introduce myself</p>
+      <p class="home-positioning" data-i18n="home.positioning">Marketing / Content Strategy / Consumer Insight Portfolio</p>
+      <img class="name-art name-hi" src="assets/home-hi.png" alt="HI">
+      <img class="name-art name-ie" src="assets/home-ie.png" alt="#IE">
+
+      <a class="folder folder-about folder-mint" href="about.html" style="--delay: 0s;">
+        <img src="assets/folder-mint.png" alt="">
+        <span data-i18n="home.folderAbout">ABOUT ME</span>
+      </a>
+
+      <a class="folder folder-projects folder-pink" href="projects.html" style="--delay: .45s;">
+        <img src="assets/folder-pink.png" alt="">
+        <span data-i18n="home.folderProjects">PROJECTS</span>
+      </a>
+
+      <a class="folder folder-experience folder-yellow" href="experience.html" style="--delay: .9s;">
+        <img src="assets/folder-yellow.png" alt="">
+        <span data-i18n="home.folderExperience">INTERN EXPERIENCE</span>
+      </a>
+
+      <a class="folder folder-contact folder-blue" href="contact.html" style="--delay: 1.25s;">
+        <img src="assets/folder-blue.png" alt="">
+        <span data-i18n="home.folderContact">CONTACT ME</span>
+      </a>
+
+      <div class="home-character-wrap">
+        <img class="character girl-illustration" src="assets/home-girl.png" alt="Illustration of Min Xie">
+      </div>
+    </section>
+  </main>
+
+  <footer class="home-note">
+    <span data-i18n="home.noteBrand">Brand research</span>
+    <span data-i18n="home.noteSpace">Spatial storytelling</span>
+    <span data-i18n="home.noteVisual">Visual strategy</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
