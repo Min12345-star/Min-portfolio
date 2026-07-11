@@ -19,7 +19,8 @@
     const params = new URLSearchParams(window.location.search);
     const file = params.get("file") || "county-aesthetics.pdf";
     const title = params.get("title") || "Project PDF";
-    const safeFile = allowedFiles.has(file) ? file : "county-aesthetics.pdf";
+    const fileName = file.split("/").pop();
+    const safeFile = allowedFiles.has(fileName) ? fileName : "county-aesthetics.pdf";
     document.getElementById("pdf-title").textContent = title;
     document.getElementById("pdf-frame").src = `assets/${safeFile}`;
   </script>
